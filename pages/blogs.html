@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
+
+    <link rel="icon" href="../assets/images/KJ-logo.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="../CSS/loader.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/style.css">
+    <title>Krituraj Anand</title>
+</head>
+<body>
+
+
+  <div class="loader">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+  </div>
+
+
+  <header id="header">
+    <nav>
+      <div class="logo">
+        <a href="../index.html"><img loading='eager' src="../assets/images/KJ-logo.png" alt="logo"></a>
+      </div>
+      <ul>
+        <li>
+          <a href="../index.html">Home</a>
+          </li>
+          <li>
+            <a href="projects.html">Projects</a>
+          </li>
+          <li>
+          <a href="#" class="active">Blogs</a>
+          </li>
+      </ul>
+      <button class="hamburger" type="button">
+        <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+        </span>
+      </button>  
+    </nav>
+  </header>
+
+
+  <main>
+    <section class="works">
+      <div class="section-heading">
+        <h2>My Blogs</h2>
+      </div>
+
+      <div class="blogs">
+
+        <article class="blog">
+          <h3>Sorting Algorithms with Javascript</h3>
+          <p>The sorting algorithms are the fundamentals of Data structure and are considered important if one wants to develop logical thinking. So here, we'll be looking at the 4 most popular sorting algorithms and implement them using Javascript.</p>
+          <button><a  class="cta" href="https://krituraj-anand.hashnode.dev/sorting-algorithms-with-javascript">read more <i class="fas fa-external-link-alt"></i></a></button>
+        </article>
+        <hr>
+        <article class="blog">
+          <h3>The Box Model</h3>
+          <p>You must have seen many different versions of this meme, all of them tell the same story, "Everybody hates CSS. I did too, in fact when I started my journey in web development, CSS for me stood for "Can be Soul Sucking". But it doesn't have to be if you've mastered the absolute basics of CSS and one of the most important and basic concept of CSS is "The Box Model".</p>
+          <button><a  class="cta" href="https://krituraj-anand.hashnode.dev/css-box-model">read more <i class="fas fa-external-link-alt"></i></a></button>
+        </article>
+
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-links">
+        <a href="https://www.linkedin.com/in/krituraj-anand/" target="blank"><b>LinkedIn</b></a>
+        <a href="https://twitter.com/kjais1720" target="_blank"><b>Twitter</b></a>
+        <a href="https://github.com/kjais1720" target="_blank"><b>Github</b></a>
+    </div>
+    <div class="footer-logo logo">
+      <a href="#"><img src="assets/images/KJ-logo.png" alt="Logo"></a>
+    </div>
+    <p id="copyright">©2021 Krituraj Anand</p>
+  </footer>
+
+  <script src="swiper.js"></script>
+  <!-- <script defer src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script> -->
+  <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
+  <script src="components.js"></script>
+  <script>
+    const headingTexts = document.querySelectorAll('.section-heading h2');
+    headingTexts.forEach((text)=>{
+      setTimeout(()=> 
+      typeText(text)
+      , 500)
+    })
+  </script>
+  
+</body>
+</html>

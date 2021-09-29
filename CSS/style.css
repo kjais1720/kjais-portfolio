@@ -610,15 +610,14 @@ main #profile #profilePic {
 }
 
 main .skills .skill-table {
-  padding: 5vw;
+  padding: 5vw 5vw 0;
 }
 
 main .skills .skill-table ul {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
-  justify-items: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
   list-style: none;
 }
 

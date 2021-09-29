@@ -497,12 +497,11 @@ main{
     .skills{
 
         .skill-table{
-            padding: 5vw;
+            padding: 5vw 5vw 0;
            
             ul {
-                display: grid;
-                grid-template-columns: 1fr 1fr;
-                justify-items: center;
+                width: fit-content;
+                margin: auto;
                 list-style: none;
                 li{
                     display: flex;

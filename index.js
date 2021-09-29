@@ -59,7 +59,7 @@ function toggle(){
 
 ScrollOut({
     once:true,
-    threshold:0.4
+    threshold:0.2
 });
 
 

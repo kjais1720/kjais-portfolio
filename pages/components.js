@@ -62,8 +62,7 @@ function typeText(text){
 }
 
 ScrollOut({
-    once:true,
-    threshold:0.4
+    once:true
 });
 
 

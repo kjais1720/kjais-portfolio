@@ -65,3 +65,11 @@ ScrollOut({
     once:true,
     threshold:0.4
 });
+
+
+const headingTexts = document.querySelectorAll('.section-heading h2');
+headingTexts.forEach((text)=>{
+    setTimeout(()=> 
+    typeText(text)
+    , 500)
+})

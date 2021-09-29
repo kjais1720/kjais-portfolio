@@ -7,7 +7,6 @@ function checkIfParaSmallThanContainer(){
     overviews.forEach(overview =>{
         const paraHeight = overview.children[0].offsetHeight;
         const containerHeight = overview.offsetHeight;
-        console.log(paraHeight,containerHeight);
         if(paraHeight < containerHeight){
             overview.nextElementSibling.style.display = 'none';
             overview.classList.add('expand');

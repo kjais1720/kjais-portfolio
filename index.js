@@ -27,7 +27,7 @@ window.onscroll = ()=>{
     } else {
         nav.style.top='-200px';
     }
-    prevScrollPos = currentScrollPos
+    prevScrollPos = currentScrollPos;
 }
 
 
@@ -42,17 +42,15 @@ animatedText.forEach(text =>{
 
 
 window.onload=toggle;
-function toggle(){
+let toggle = () => {
     setTimeout(()=>{
         document.body.classList.add('loaded');
-        // animatedText[0].classList.add('active');
         setTimeout(()=>{
             animatedText.forEach(e=>{
                     e.classList.add('active');
                 })
         },400);
     },200);
-    
 };
 
 
@@ -61,11 +59,3 @@ ScrollOut({
     once:true,
     threshold:0.2
 });
-
-
-
-
-// function scrollAnimation(){
-//     const animatedContainers = document.querySelectorAll('[data-scroll]');
-//     console.log(animatedContainers);
-// }

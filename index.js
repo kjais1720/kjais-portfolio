@@ -40,19 +40,19 @@ animatedText.forEach(text =>{
 
 
 
-window.onload=toggle;
-
-let toggle = () => {
-    setTimeout(()=>{
-        document.body.classList.add('loaded');
+    
+    let toggle = () => {
         setTimeout(()=>{
-            animatedText.forEach(e=>{
+            document.body.classList.add('loaded');
+            setTimeout(()=>{
+                animatedText.forEach(e=>{
                     e.classList.add('active');
                 })
-        },400);
-    },200);
-};
-
+            },400);
+        },200);
+    };
+    
+    window.onload=toggle;
 
 
 ScrollOut({
